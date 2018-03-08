@@ -6,7 +6,6 @@ $(document).ready(function(){
 //psedocode for Cyrstal counter
 
 
-
 // var randomNumber = Math.floor(Math.random() * 121); // unsrure if I need this or not. Should it be 0?
 
 // wins = 0
@@ -15,7 +14,7 @@ $(document).ready(function(){
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
-var userScore = 0;
+// var userScore = 0; unsure if I need that
 
 // Crystals
 var crytsalOne = 0;
@@ -23,23 +22,13 @@ var crytsalTwo = 0;
 var crytsalThree = 0;
 var crytsalFour = 0;
 
+function clearGame() {
 
 
-//GameStart
-
-//Random Number is displayed - goal number
-    //randonNumber should be between 19-120
-function gameStart(){
-
-
-  wins = 0;
-  $("#wins").text(wins);
-  losses = 0;
-  $("#losses").text(losses);
+  // $("#losses").text(losses);
   totalScore = 0;
   $("#totalScore").text(totalScore);
-  userScore = 0;
-  $("#userScore").text(userScore);
+ 
 
 
 // assigning randomNumber to a random number
@@ -50,7 +39,46 @@ function gameStart(){
 //4 crystals are assigned a random number
   //game will hide this amount until player clicks on crsytal .hide()
 
-  //Crystals should be assigned a random hidden value between 1-12
+
+  crytsalOne = Math.floor(Math.random() * 13);
+  $("#crytsalOne").text(crytsalOne);
+
+  crytsalTwo = Math.floor(Math.random() * 13);
+  $("#crytsalTwo").text(crytsalTwo);
+
+  crytsalThree = Math.floor(Math.random() * 13);
+  $("#crytsalThree").text(crytsalThree);
+
+  crytsalFour = Math.floor(Math.random() * 13);
+  $("#crytsalFour").text(crytsalFour);
+
+
+}
+
+
+
+//GameStart
+
+function gameStart(){
+
+
+  wins = 0;
+  // $("#wins").text(wins);
+  losses = 0;
+  // $("#losses").text(losses);
+  totalScore = 0;
+  $("#totalScore").text(totalScore);
+ 
+
+
+// assigning randomNumber to a random number
+  randomNumber = Math.floor(Math.random() * 121);
+  $("#randomNumber").text(randomNumber);
+
+
+//4 crystals are assigned a random number
+  //game will hide this amount until player clicks on crsytal .hide()
+
 
   crytsalOne = Math.floor(Math.random() * 13);
   $("#crytsalOne").text(crytsalOne);
@@ -67,24 +95,91 @@ function gameStart(){
                   }
 
 
-//Interacting with the game
+
+
+//The game working 
 
 $("#crytsalOne").click(function() {
-  userScore = crytsalOne + userScore;
+  totalScore = crytsalOne + totalScore;
+  console.log(totalScore)
+  $("#totalScore").text(totalScore)
+  if (totalScore === randomNumber) {
+    alert("YOU WIN--keep playing to see how many wins you can get!");
+    wins++
+    $("#wins").text(wins);
+    clearGame ()
+  } else if (totalScore > randomNumber) {
+    alert("You loose!")
+    losses++
+    $("#losses").text(losses);
+    clearGame ()
+  }
+  
+
+
 });
 
 $("#crytsalTwo").click(function() {
-  userScore = crytsalTwo + userScore;
+  totalScore = crytsalTwo + totalScore;
+    console.log(totalScore)
+    $("#totalScore").text(totalScore)
+    if (totalScore === randomNumber) {
+    alert("YOU WIN--keep playing to see how many wins you can get!");
+    wins++
+    $("#wins").text(wins);
+    clearGame ()
+  } else if (totalScore > randomNumber) {
+    alert("You loose!")
+    losses++
+    $("#losses").text(losses);
+    clearGame ()
+  }
+  
+
+
 });
 
 $("#crytsalThree").click(function() {
-  userScore = crytsalThree + userScore;
+  totalScore = crytsalThree + totalScore;
+    console.log(totalScore)
+    $("#totalScore").text(totalScore)
+    if (totalScore === randomNumber) {
+    alert("YOU WIN--keep playing to see how many wins you can get!");
+    wins++
+    $("#wins").text(wins);
+    clearGame ()
+  } else if (totalScore > randomNumber) {
+    alert("You loose!")
+    losses++
+    $("#losses").text(losses);
+    clearGame ()
+  }
+  
+
 });
+
 
 $("#crytsalFour").click(function() {
-  userScore = crytsalFour + userScore;
+  totalScore = crytsalFour + totalScore;
+    console.log(totalScore)
+    $("#totalScore").text(totalScore)
+    if (totalScore === randomNumber) {
+    alert("YOU WIN--keep playing to see how many wins you can get!");
+    wins++
+    $("#wins").text(wins);
+    clearGame ()
+  } else if (totalScore > randomNumber) {
+    alert("You loose!")
+    losses++
+    $("#losses").text(losses);
+    clearGame ()
+  }
+  
+
 });
 
+
+gameStart()
 
 
 

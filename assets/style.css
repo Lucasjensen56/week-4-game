@@ -3,12 +3,6 @@ body {
 
 }
 
-
-
-
-
-
-
 .jumbotron {
 	background-image:url("images/B1C8M2.jpg");
 /*	height:300px;
@@ -40,8 +34,9 @@ img {
 }
 
 .crystalGroup {
-    border: 5px solid #D8D8DA;
+    border: 2px solid;
     margin: 3%;
+    background-color: #D8D8DA;
 }
 
 .numberBorders {

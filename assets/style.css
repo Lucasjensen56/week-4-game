@@ -65,6 +65,8 @@ h1 {
 	font-family: 'Londrina Solid', cursive;
 }
 
+
+
 h2 {
 	text-align: center;
 	font-family: 'Londrina Solid', cursive;
@@ -73,8 +75,9 @@ h2 {
 }
 
 p {
-	text-align: center;
-	font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 123%;
 }
 
 button {

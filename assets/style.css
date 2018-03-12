@@ -102,7 +102,10 @@ button {
 
 .instructionsDiv {
     padding-bottom: 24px;
+}
 
-
+@media screen and (min-width: 768px)
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 96px;
 }
 

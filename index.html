@@ -6,19 +6,20 @@
 
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet"> 
 
 	<!--  -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	
-		<title>Potion Counter</title>
+		<title id="title">Potion Counter</title>
 </head>
 <body>
 
 
 
 <div class="jumbotron" id="jumbotronTest">
-  	<div class="title container">
+  	<div id="title" class="container">
 		<h1>Potion Counter</h1>
 	</div>	
 </div>
@@ -28,14 +29,21 @@
 </div>
 <div id="instructions">
 	<p>You will be given a random number at the start of the game</p>
-	<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p>
+	<p>There are four Potions below. By clicking on a Potion you will add a specific amount of points to your total score</p>
 	<p>You win the game by matching your total score to the random number, you loose the game if your score goes above the random number</p>
+<<<<<<< HEAD
 	<p>The value of each crystal is hidden fro you until you click on it</p>
 	<p>Each time when the game starts, the game will change the valeus of each crystal</p>
 	
 </div>
 
 
+=======
+	<p>The value of each Potion is hidden from you until you click on it</p>
+	<p>Each time when the game starts, the game will change the values of each crystal</p>
+</div>
+
+>>>>>>> f017f2100705dbad44f4ce5242442500f6aa91d5
 <div class="row">
 	<div class="col-md-12">
 		<h1>Random Number Generated</h1>
@@ -63,7 +71,7 @@
 		<div class="scoreBoxes"> 
 			<h2>Wins</h2>
 			<h2 class="numberBorders" id="wins"></h2>
-			<h2>Looses</h2>
+			<h2>Losses</h2>
 			<h2 class="numberBorders" id="losses"></h2>
 		</div>
 	</div>

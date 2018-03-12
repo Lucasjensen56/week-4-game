@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 
 
 
 
 
+=======
+body {
+	margin: 0;
+
+}
+>>>>>>> f017f2100705dbad44f4ce5242442500f6aa91d5
 
 .jumbotron {
 	background-image:url("images/B1C8M2.jpg");
@@ -22,6 +29,9 @@
     background-color: #eee;
 }
 
+.jumbotron .h1, .jumbotron h1 {
+}
+
 
 
 img {
@@ -35,12 +45,13 @@ img {
 }
 
 .crystalGroup {
-    border: 5px solid #15131366;
+    border: 2px solid;
     margin: 3%;
+    background-color: #D8D8DA;
 }
 
 .numberBorders {
-	border: 3px solid #15131366;
+	border: 3px solid #D8D8DA;
     margin-right: 42%;
     margin-left: 42%;
 }
@@ -58,22 +69,29 @@ img {
 h1 {
 	text-align: center;
 	color: white;
-
+	font-family: 'Londrina Solid', cursive;
 }
+
+
 
 h2 {
 	text-align: center;
+	font-family: 'Londrina Solid', cursive;
+
+
 }
 
 p {
-	text-align: center;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 123%;
 }
 
 button {
 
 }
 
-.title {
+#title {
 	color: white;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 40%;
@@ -94,7 +112,18 @@ button {
 
 .instructionsDiv {
     padding-bottom: 24px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    /* font-family: inherit; */
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
 
 
+@media screen and (min-width: 768px)
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 96px;
 }
 

@@ -157,7 +157,7 @@ $("#crytsalFour").click(function() {
 gameStart()
 
 $("#btnInstr").click(function() {
-  $("#instructions").toggle();
+  $("#instructions").toggle(400);
 });
 
 

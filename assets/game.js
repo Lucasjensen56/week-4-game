@@ -89,7 +89,7 @@ function gameStart(){
 $("#crytsalOne").click(function() {
   totalScore = crytsalOne + totalScore;
   console.log(totalScore)
-  $("#totalScore").text(totalScore).fadeToggle(200)
+  $("#totalScore").text(totalScore)
   if (totalScore === randomNumber) {
     alert("YOU WIN! Keep playing to see how many wins you can get!");
     wins++

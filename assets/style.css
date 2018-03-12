@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 
-
-
-
-
-=======
 body {
 	margin: 0;
 
 }
->>>>>>> f017f2100705dbad44f4ce5242442500f6aa91d5
+
 
 .jumbotron {
 	background-image:url("images/B1C8M2.jpg");
@@ -22,14 +16,11 @@ body {
 }
 
 #jumbotronTest {
-    padding-top: 30px;
-    padding-bottom: 113px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     margin-bottom: 30px;
     color: inherit;
     background-color: #eee;
-}
-
-.jumbotron .h1, .jumbotron h1 {
 }
 
 
@@ -77,8 +68,10 @@ h1 {
 h2 {
 	text-align: center;
 	font-family: 'Londrina Solid', cursive;
+}
 
-
+#headerStyle {
+    font-family: 'Londrina Solid', cursive;
 }
 
 p {
@@ -87,14 +80,17 @@ p {
     font-size: 123%;
 }
 
-button {
 
-}
+
+
 
 #title {
 	color: white;
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 40%;
+	font-size: 92px;
+/*     -webkit-text-stroke: 2px grey;
+*/     text-shadow: 1px 1px #000;
+
 }
 
 .scoreBoxesTotalScore {
@@ -112,18 +108,15 @@ button {
 
 .instructionsDiv {
     padding-bottom: 24px;
+    padding-right: 10px;
+    padding-right: 10px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    /* font-family: inherit; */
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
+#instructions {
+	padding-right: 10%;
+	padding-left: 10%;
+
 }
 
 
-@media screen and (min-width: 768px)
-.jumbotron .h1, .jumbotron h1 {
-    font-size: 96px;
-}
 
